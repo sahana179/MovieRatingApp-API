@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "7f2ebe85-47ba-4f11-aa36-23ee8dee4b62",
+		"name": "Movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Tutorial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Spring Boot PostgreSQL Tut#5\",\r\n    \"description\":\"Tut#5 Description\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tutorial",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"PostgreSQL Tut#2\",\r\n    \"description\":\"Desc for Tut#2\",\r\n    \"published\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tutorials",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"PostgreSQL Tut#2\",\r\n    \"description\":\"Desc for Tut#2\",\r\n    \"publsihed\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tutorials by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"PostgreSQL Tut#2\",\r\n    \"description\":\"Desc for Tut#2\",\r\n    \"publsihed\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get publshied Tutorials",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"PostgreSQL Tut#2\",\r\n    \"description\":\"Desc for Tut#2\",\r\n    \"publsihed\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tutorials/published",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials",
+						"published"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Singham 10\",\r\n    \"externalId\":\"104\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Hera feri 2\",\r\n    \"externalId\":\"101\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/movies/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Spring Boot PostgreSQL Tut#5\",\r\n    \"description\":\"Tut#5 Description\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/movies/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ajeet.namdeo\",\r\n    \"password\":\"123\",\r\n    \"contact\": {\r\n        \"name\": \"123\",\r\n        \"birthDate\": \"2022-07-17\",\r\n        \"gender\": \"male\",\r\n        \"email\": \"test\",\r\n        \"addresss\": [\r\n            {\r\n                \"country\": \"India\",\r\n                \"area\": \"India\",\r\n                \"city\": \"JBP\",\r\n                \"street\": \"JBP-street\",\r\n                \"number\": \"123\"\r\n            }\r\n        ]\r\n    },\r\n    \"role\": \"admin\"\r\n   \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create seen movie old",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"1\",\r\n    \"movieId\":\"2\",\r\n    \"date\": \"2022-07-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seen-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seen-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create seen movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\":21,\r\n    \"userId\":7\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seen-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seen-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get seen movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"ashish.kewat\",\r\n        \"contact\": {\r\n            \"name\": \"123\",\r\n            \"birthDate\": \"2022-07-17\",\r\n            \"gender\": \"male\",\r\n            \"email\": \"test\",\r\n            \"addresss\": [\r\n                {\r\n                    \"country\": \"India\",\r\n                    \"area\": \"India\",\r\n                    \"city\": \"JBP\",\r\n                    \"street\": \"JBP-street\",\r\n                    \"number\": \"123\"\r\n                }\r\n            ]\r\n        },\r\n        \"role\": \"admin\"\r\n    },\r\n    \"movie\": {\r\n        \"title\": \"Singham\",\r\n        \"externalId\": \"102\"\r\n    },\r\n    \"date\": \"2022-07-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seen-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seen-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get last seen by user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/last-seen-by-user/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"last-seen-by-user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all seen movies by user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"ashish.kewat\",\r\n        \"contact\": {\r\n            \"name\": \"123\",\r\n            \"birthDate\": \"2022-07-17\",\r\n            \"gender\": \"male\",\r\n            \"email\": \"test\",\r\n            \"addresss\": [\r\n                {\r\n                    \"country\": \"India\",\r\n                    \"area\": \"India\",\r\n                    \"city\": \"JBP\",\r\n                    \"street\": \"JBP-street\",\r\n                    \"number\": \"123\"\r\n                }\r\n            ]\r\n        },\r\n        \"role\": \"admin\"\r\n    },\r\n    \"movie\": {\r\n        \"title\": \"Singham\",\r\n        \"externalId\": \"102\"\r\n    },\r\n    \"date\": \"2022-07-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seen-movies?userId=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seen-movies"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all seen movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"ashish.kewat\",\r\n        \"contact\": {\r\n            \"name\": \"123\",\r\n            \"birthDate\": \"2022-07-17\",\r\n            \"gender\": \"male\",\r\n            \"email\": \"test\",\r\n            \"addresss\": [\r\n                {\r\n                    \"country\": \"India\",\r\n                    \"area\": \"India\",\r\n                    \"city\": \"JBP\",\r\n                    \"street\": \"JBP-street\",\r\n                    \"number\": \"123\"\r\n                }\r\n            ]\r\n        },\r\n        \"role\": \"admin\"\r\n    },\r\n    \"movie\": {\r\n        \"title\": \"Singham\",\r\n        \"externalId\": \"102\"\r\n    },\r\n    \"date\": \"2022-07-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seen-movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seen-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get popular Movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"ashish.kewat\",\r\n        \"contact\": {\r\n            \"name\": \"123\",\r\n            \"birthDate\": \"2022-07-17\",\r\n            \"gender\": \"male\",\r\n            \"email\": \"test\",\r\n            \"addresss\": [\r\n                {\r\n                    \"country\": \"India\",\r\n                    \"area\": \"India\",\r\n                    \"city\": \"JBP\",\r\n                    \"street\": \"JBP-street\",\r\n                    \"number\": \"123\"\r\n                }\r\n            ]\r\n        },\r\n        \"role\": \"admin\"\r\n    },\r\n    \"movie\": {\r\n        \"title\": \"Singham\",\r\n        \"externalId\": \"102\"\r\n    },\r\n    \"date\": \"2022-07-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/most-viewed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"most-viewed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ashish.kewat\",\r\n    \"password\":\"1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
